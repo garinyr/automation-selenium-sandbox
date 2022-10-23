@@ -26,11 +26,14 @@ public class HomePO {
   private WebElement exampleTitle;
 
   public String getTitle() {
+    return driver.getTitle();
+  }
+
+  public void getExampleList(){
     List<WebElement> listTitle = driver.findElements(By.xpath("//legend"));
     for (WebElement webElement : listTitle) {
       System.out.println(webElement.getText());
     }
-    return driver.getTitle();
   }
 }
 
