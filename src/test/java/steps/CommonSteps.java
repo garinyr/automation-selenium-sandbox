@@ -12,6 +12,7 @@ import utilities.ThreadManager;
 public class CommonSteps {
     private WebDriver driver = ThreadManager.getDriver();
     private SeleniumHelpers selenium = new SeleniumHelpers(driver);
+
     private HomePO home = new HomePO(driver);
 
     @Given("user access page {string}")
@@ -33,6 +34,4 @@ public class CommonSteps {
     public void compare_url(String url){
         Assert.assertEquals(url, selenium.getURL());
    }
-
-
 }
