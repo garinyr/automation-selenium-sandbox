@@ -1,0 +1,7 @@
+/target/
+/test-output/
+/SeleniumSandbox.iml
+/.classpath
+/.idea/
+/bin/
+debug.log
